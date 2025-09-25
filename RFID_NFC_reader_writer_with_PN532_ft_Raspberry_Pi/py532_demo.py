@@ -164,7 +164,7 @@ class Mifare(i2c.Pn532_i2c):
     def mifare_auth_b(self,address,key_b):
         """Authenticate the Mifare card with key B.
 
-        The "key_a" parameter is a bytearray that contains key B.
+        The "key_b" parameter is a bytearray that contains key B.
         You may specify an address directly or use the mifare_address()
         function to calculate it. Raises an IOError if authentication failed.
         """
